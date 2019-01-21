@@ -66,6 +66,15 @@ hr {
 
 .container { word-wrap: break-word; }
 .center { text-align: center; }
+.center-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .left, .container .left { text-align: left; }
 
 .container h1, .container h2, .container h3, .container h4 {
@@ -170,13 +179,14 @@ nav ul li:hover, nav ul li.active {
   display:block;
   width:100%;
   min-height:300px;
-  padding:210px 0;
+  padding:101px 0;
   background:url(img/bgnoise.png);
   /* generated noise from noisetexturegenerator.com */
 }
 
 .section:first-of-type {
     padding-top: 140px;
+    min-height:100vh;
 }
 
 
@@ -200,13 +210,13 @@ nav ul li:hover, nav ul li.active {
 }
 
 .sectiondivider {
-  width:270px;
-  height:270px;
-  padding:15px;
+  width:130px;
+  height:130px;
+  padding:7px;
   position:absolute;
-  top:-135px;
+  top:-65px;
   left:50%;
-  margin-left:-135px;
+  margin-left:-65px;
 }
 
 .sectiondivider img {
@@ -217,9 +227,9 @@ nav ul li:hover, nav ul li.active {
 }
 
 .sectiondivider .fa-stack {
-  font-size: 130px;
+  font-size: 62px;
   position: static;
-  margin-top: -8px;
+  margin-top: -4px;
 }
 .sectiondivider .fa-circle { color: #fff; }
 
@@ -327,21 +337,21 @@ nav ul li:hover, nav ul li.active {
 	.container h4 { font-size: 18px; }
 
 
-  .section { padding:130px 0; }
+  .section { padding:62px 0; }
   .sectiondivider {
-    width:200px;
-    height:200px;
-    padding:15px;
-    top:-100px;
-    margin-left:-100px;
+    width:100px;
+    height:100px;
+    padding:7.5px;
+    top:-50px;
+    margin-left:-50px;
   }
   .sectiondivider img {
     width:150px;
     height:180px;
   }
   .sectiondivider .fa-stack {
-    font-size: 100px;
-    margin-top: -14px;
+    font-size: 50px;
+    margin-top: -7px;
   }
   .sectiondivider h5 {
     font-size:15px;

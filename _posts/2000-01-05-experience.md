@@ -2,7 +2,7 @@
 title: "experience"
 bg: blue
 color: white
-fa-icon: plug
+fa-icon: building
 ---
 
 # Experience
