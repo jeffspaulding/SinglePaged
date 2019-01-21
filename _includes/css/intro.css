@@ -1,0 +1,28 @@
+#intro {
+  background-color: black !important;
+  color: white;
+}
+
+#intro a:visited {
+  color: #f8f8f8;
+}
+
+#intro a:hover {
+  color: #0077B5;
+}
+
+#im-jeff {
+  margin-bottom:0;
+}
+
+.tricker {
+  height: 50px;
+  overflow: hidden;
+}
+
+.tricker h3 {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  transition: margin-top .3s ease;
+}

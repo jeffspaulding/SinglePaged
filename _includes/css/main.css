@@ -186,9 +186,8 @@ nav ul li:hover, nav ul li.active {
 
 .section:first-of-type {
     padding-top: 140px;
-    min-height:100vh;
+    min-height:98vh;
 }
-
 
 #footer {
   padding: 8px 0;
@@ -220,14 +219,14 @@ nav ul li:hover, nav ul li.active {
 }
 
 .sectiondivider img {
-  width:200px;
-  height:240px;
+  width:120px;
+  height:120px;
   position: static;
-  margin-top: -20px;
+  margin-top: -2px;
 }
 
 .sectiondivider .fa-stack {
-  font-size: 62px;
+  font-size: 64px;
   position: static;
   margin-top: -4px;
 }

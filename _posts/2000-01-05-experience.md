@@ -1,6 +1,6 @@
 ---
 title: "experience"
-bg: blue
+bg: red
 color: white
 fa-icon: building
 ---

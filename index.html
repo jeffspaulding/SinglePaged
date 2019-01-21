@@ -18,12 +18,36 @@
   <div id="main">
 
     <nav><ul>
+      <li class="p-intro"><a href="#intro">Home</a></li>
       {% for node in site.posts reversed %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
       {% endfor %}
     </ul></nav>
 
+     <div id="intro" class="section p-intro">
+        <div class="container center-center">
+          <h1>Hello</h1>
+<!--           <span class="subtlecircle imaged">
+            <img src="/img/circle.png" alt="section icon" />
+          </span> -->
+          <h3 id="im-jeff">I’m Jeff,</h3>
+          <div class="tricker">
+            <h3 style="color:yellow;">an IT professional</h3>
+            <h3 style="color:green;">a WiFi expert</h3>
+            <h3 style="color:red;">a macOS admin</h3>
+            <h3 style="color:cyan;">an avid reader</h3>
+            <h3 style="color:purple;">a Windows admin</h3>
+            <h3 style="color:green;">a G Suite expert</h3>
+            <h3 style="color:red;">a competitive gamer</h3>
+            <h3 style="color:cyan;">a Web Developer</h3>
+          </div>
+          <h1>
+            <a href="https://www.linkedin.com/in/jeffspaulding"><span class="fa fa-linkedin-square"></span></a> <a href="/pdf/Jeff_Spaulding_Resume.pdf"><span class="fa fa-file-text"></span></a>
+          </h1>
+
+        </div>
+      </div>
 
     {% for page in site.posts reversed %}
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
