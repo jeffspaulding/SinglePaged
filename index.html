@@ -19,35 +19,112 @@
 
     <nav><ul>
       <li class="p-intro"><a href="#intro">Home</a></li>
+      <li class="p-about-me"><a href="#about-me">About Me</a></li>
+      <li class="p-skills"><a href="#skills">Skills</a></li>
       {% for node in site.posts reversed %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
       {% endfor %}
     </ul></nav>
 
-     <div id="intro" class="section p-intro">
-        <div class="container center-center">
-          <h1>Hello</h1>
-<!--           <span class="subtlecircle imaged">
-            <img src="/img/circle.png" alt="section icon" />
-          </span> -->
-          <h3 id="im-jeff">I’m Jeff,</h3>
-          <div class="tricker">
-            <h3 style="color:yellow;">an IT professional</h3>
-            <h3 style="color:green;">a WiFi expert</h3>
-            <h3 style="color:red;">a macOS admin</h3>
-            <h3 style="color:cyan;">an avid reader</h3>
-            <h3 style="color:purple;">a Windows admin</h3>
-            <h3 style="color:green;">a G Suite expert</h3>
-            <h3 style="color:red;">a competitive gamer</h3>
-            <h3 style="color:cyan;">a Web Developer</h3>
-          </div>
-          <h1>
-            <a href="https://www.linkedin.com/in/jeffspaulding"><span class="fa fa-linkedin-square"></span></a> <a href="/pdf/Jeff_Spaulding_Resume.pdf"><span class="fa fa-file-text"></span></a>
-          </h1>
+    <div id="intro" class="section p-intro">
+      <div class="container center-center">
+        <h1>Hello</h1>
+        <h3 id="im-jeff">I’m Jeff,</h3>
+        <div class="tricker">
+          <h3 style="color:yellow;">an IT professional</h3>
+          <h3 style="color:green;">a WiFi expert</h3>
+          <h3 style="color:red;">a macOS admin</h3>
+          <h3 style="color:cyan;">an avid reader</h3>
+          <h3 style="color:purple;">a Windows admin</h3>
+          <h3 style="color:green;">a G Suite expert</h3>
+          <h3 style="color:red;">a competitive gamer</h3>
+          <h3 style="color:cyan;">a Web Developer</h3>
+        </div>
+        <h1>
+         <a href="https://www.linkedin.com/in/jeffspaulding"><span class="fa fa-linkedin-square"></span></a> <a href="/pdf/Jeff_Spaulding_Resume.pdf"><span class="fa fa-file-text"></span></a>
+        </h1>
+      </div>
+    </div>
 
+    <div id="about-me" class="section p-about-me">
+      <div class="subtlecircle sectiondivider faicon">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-user fa-stack-1x"></i>
+        </span>
+      </div>
+
+      <div class="container ">
+        <h1>About Me</h1>
+
+        <p>When I was 6 I had a Buzz Lightyear toy, complete with laser beams and sound effects. My childish curiosity led me to take it apart. I destroyed that toy, but I learned a lot. When I was 14, I received my first computer. Eventually, I was able to take it apart <em>and</em> put it back together.</p>
+
+        <p>Now, with 8 years of experience in IT, I’ve found joy in designing and implementing IT solutions that empower business, enhance workplace experience, and reduce operational cost.</p>
+      </div>
+    </div>
+
+    <div id="skills" class="section p-skills">
+      <div class="subtlecircle sectiondivider faicon">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-laptop fa-stack-1x"></i>
+        </span>
+      </div>
+
+      <div class="container ">
+        <h1>Skills</h1>
+        <div class="row">
+          <div class="column-3">
+            <h3>Local Administration</h3>
+             <ul>
+              <li>macOS and Windows</li>
+              <li>iOS and Android</li>
+              <li>Hardware Repair</li>
+              <li>TCP/IP, DHCP, DNS, VLAN</li>
+              <li>WiFi Security and Coverage</li>
+              <li>Audiovisual (AV) Systems</li>
+              <li>Linux (CentOS and RHEL)</li>
+            </ul>
+          </div>
+
+          <div class="column-3">
+            <h3>IT Operations</h3>
+             <ul>
+              <li>Help Desk / Service Desk</li>
+              <li>Onboarding / Training</li>
+              <li>Asset Management</li>
+              <li>Documentation</li>
+              <li>Procurement</li>
+              <li>Budgeting</li>
+              <li>Metrics and Reports</li>
+            </ul>
+          </div>
+
+          <div class="column-3">
+            <h3>Cloud Administration</h3>
+            <ul>
+              <li>Single Sign-On</li>
+              <li>Identity and Access Management</li>
+              <li>Mobile Device Management</li>
+              <li>G Suite</li>
+              <li>Office 365</li>
+              <li>Slack</li>
+              <li>Atlassian (Jira, Confluence)</li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <div id="bookshelf">
+        <img id="coffee" class="book" src="/img/coffee.png">
+        <img id="notepad" class="book" src="/img/notepad.png">
+        <img id="phoenix_project" class="book" src="/img/the_phoenix_project.jpg">
+        <img id="the_7_habits" class="book" src="/img/the_7_habits.jpg">
+        <img id="dont_think" class="book" src="/img/dont_make_me_think.jpg">
+        <img id="design_everyday" class="book" src="/img/the_design_of_everyday.jpg">
+      </div>
+    </div>
 
     {% for page in site.posts reversed %}
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}

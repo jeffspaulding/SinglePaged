@@ -1,10 +1,22 @@
+nav .p-about-me {
+  border-color: #2196F3;
+}
+
+nav .p-skills {
+  border-color: #4CAF50;
+}
+
 #intro {
   background-color: black !important;
   color: white;
 }
 
+#intro a {
+  color: white;
+}
+
 #intro a:visited {
-  color: #f8f8f8;
+  color: white;
 }
 
 #intro a:hover {
@@ -25,4 +37,90 @@
   height: 50px;
   line-height: 50px;
   transition: margin-top .3s ease;
+}
+
+#about-me {
+  background-color: #2196F3 !important;
+  color: white;
+}
+
+#about-me a {
+  color: white;
+}
+
+#about-me .sectiondivider {
+  color: #2196F3;
+}
+
+#skills {
+  background-color: #4CAF50 !important;
+  color: white;
+}
+
+#skills a {
+  color: white;
+}
+
+#skills .sectiondivider {
+  color: #4CAF50;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+.column-3 {
+  width: 33%;
+  float: left;
+}
+
+.column-3 h3 {
+  text-align: left;
+}
+
+#bookshelf {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.book {
+  width: 200px;
+  position: absolute;
+}
+
+#phoenix_project {
+  transform: rotate(10deg);
+  left: 25%;
+  bottom: 5%;
+}
+
+#the_7_habits {
+  transform: rotate(5deg);
+  left: 40%;
+  top: 10%;
+}
+
+#dont_think {
+  right: 10%;
+  top: 45%;
+}
+
+#design_everyday {
+  transform: rotate(-10deg);
+  left: 5%;
+  top: 10%;
+}
+
+#coffee {
+  right: 25%;
+  bottom: 15%;
+}
+
+#notepad {
+  right:40%;
+  bottom:8%;
 }
