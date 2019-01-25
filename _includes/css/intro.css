@@ -42,6 +42,11 @@ nav .p-skills {
 #about-me {
   background-color: #2196F3 !important;
   color: white;
+  background-image: url(/img/laptop-large.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position-x: -250px;
 }
 
 #about-me a {
@@ -92,35 +97,57 @@ nav .p-skills {
   position: absolute;
 }
 
-#phoenix_project {
-  transform: rotate(10deg);
-  left: 25%;
-  bottom: 5%;
+#keyboard {
+  width: 600px;
+  left: 30%;
+  top: 5%;
+  transform: rotate(-5deg);
 }
 
-#the_7_habits {
+#phoenix_project {
   transform: rotate(5deg);
-  left: 40%;
-  top: 10%;
+  left: 15%;
+  bottom: 5%;
+  z-index: 4;
+  width: 230px;
+}
+
+#phone_habits {
+  width: 300px;
+  transform: rotate(5deg);
+  right: 10%;
+  top: 0%;
+  z-index: 5;
 }
 
 #dont_think {
-  right: 10%;
+  right: 5%;
   top: 45%;
+  z-index: 3;
 }
 
 #design_everyday {
   transform: rotate(-10deg);
   left: 5%;
   top: 10%;
+  z-index: 2;
+}
+
+#glasses {
+  right: 30%;
+  bottom: 45%;
+  z-index: 7;
 }
 
 #coffee {
-  right: 25%;
-  bottom: 15%;
+  right: 24%;
+  bottom: 10%;
+  z-index: 8;
 }
 
 #notepad {
-  right:40%;
-  bottom:8%;
+  right: 40%;
+  bottom: 0%;
+  width: 380px;
+  z-index: 6;
 }
