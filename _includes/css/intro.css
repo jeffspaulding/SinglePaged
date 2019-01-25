@@ -86,15 +86,12 @@ nav .p-skills {
 }
 
 .row {
-  content: "";
-  display: table;
-  clear: both;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .column-3 {
-  width: 33%;
-  float: left;
+  width: 320px;
 }
 
 .column-3 h3 {
