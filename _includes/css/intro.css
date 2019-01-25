@@ -56,17 +56,20 @@ nav .p-skills {
 #about-me-left, #about-me-right {
   display: flex;
   flex: 1;
+  position: relative;
+  top: -100px;
+  margin-bottom: -200px;
 }
 
 #about-me-left {
-  background-image: url("/img/laptop-large.png");
+  background-image: url("/img/imac-desk.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 }
 
 #about-me-right {
-  background-image: url("/img/buzz.png");
+  background-image: url("/img/macbook-desk.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
