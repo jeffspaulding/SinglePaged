@@ -42,11 +42,7 @@ nav .p-skills {
 #about-me {
   background-color: #2196F3 !important;
   color: white;
-  background-image: url(/img/laptop-large.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 400px;
-  background-position-x: -250px;
+  display: flex;
 }
 
 #about-me a {
@@ -55,6 +51,25 @@ nav .p-skills {
 
 #about-me .sectiondivider {
   color: #2196F3;
+}
+
+#about-me-left, #about-me-right {
+  display: flex;
+  flex: 1;
+}
+
+#about-me-left {
+  background-image: url("/img/laptop-large.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+#about-me-right {
+  background-image: url("/img/buzz.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
 }
 
 #skills {
@@ -93,12 +108,11 @@ nav .p-skills {
 }
 
 .book {
-  width: 200px;
   position: absolute;
 }
 
 #keyboard {
-  width: 600px;
+  width: 35%;
   left: 30%;
   top: 5%;
   transform: rotate(-5deg);
@@ -107,47 +121,44 @@ nav .p-skills {
 #phoenix_project {
   transform: rotate(5deg);
   left: 15%;
-  bottom: 5%;
+  bottom: 0%;
   z-index: 4;
-  width: 230px;
-}
-
-#phone_habits {
-  width: 300px;
-  transform: rotate(5deg);
-  right: 10%;
-  top: 0%;
-  z-index: 5;
-}
-
-#dont_think {
-  right: 5%;
-  top: 45%;
-  z-index: 3;
+  width: 18%;
 }
 
 #design_everyday {
   transform: rotate(-10deg);
-  left: 5%;
+  left: 0%;
   top: 10%;
   z-index: 2;
+  width: 18%;
+}
+
+#phone_habits {
+  width: 18%;
+  transform: rotate(5deg);
+  right: 5%;
+  top: 0%;
+  z-index: 5;
 }
 
 #glasses {
-  right: 30%;
+  right: 25%;
   bottom: 45%;
   z-index: 7;
+  width: 15%;
 }
 
 #coffee {
   right: 24%;
   bottom: 10%;
   z-index: 8;
+  width: 12%;
 }
 
 #notepad {
   right: 40%;
   bottom: 0%;
-  width: 380px;
+  width: 23%;
   z-index: 6;
 }

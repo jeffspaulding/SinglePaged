@@ -110,5 +110,13 @@ $(document).ready(function (){
         }
     }, duration);
 
+    // Resize the bookshelf to maintain aspect ratio
+    var bookshelfHeight = $("#bookshelf").width() * 0.55;
+    $("#bookshelf").css("height", bookshelfHeight);
+
+    $(window).resize(function() {
+        var bookshelfHeight = $("#bookshelf").width() * 0.55;
+        $("#bookshelf").css("height", bookshelfHeight);
+    });
 });
 
