@@ -65,14 +65,14 @@ nav .p-skills {
   background-image: url("/img/imac-desk.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
+  background-size: 580px;
 }
 
 #about-me-right {
   background-image: url("/img/macbook-desk.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: cover;
+  background-size: 580px;
 }
 
 #skills {
