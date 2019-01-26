@@ -91,6 +91,15 @@ $(document).ready(function (){
         }
 	});
 
+    var trickerColors = ['#FFEB3B', '#E91E63', '#00BCD4', '#CDDC39', '#F44336', '#8BC34A', '#FFC107']
+    var trickerCounter = 0;
+    $(".tricker h2").each(function() {
+        $(this).css('color', trickerColors[trickerCounter]);
+        trickerCounter ++;
+        if(trickerCounter == trickerColors.length) {
+            trickerCounter = 0;
+        }
+    });
     // Rotating text by Ahmed Beheiry: https://codepen.io/ahmedbeheiry/pen/vgoeRv
     var duration = 3000;  // change this to change rotation time in milliseconds
     var current = 1;

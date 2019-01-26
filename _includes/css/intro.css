@@ -11,8 +11,25 @@ nav .p-skills {
   color: white;
 }
 
+#intro h1 {
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 500;
+}
+
+#intro h2 {
+  font-size: 34px;
+  padding: 0 4px;
+}
+
+#intro h3 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
 #intro a {
   color: white;
+  text-decoration: none;
 }
 
 #intro a:visited {
@@ -23,19 +40,22 @@ nav .p-skills {
   color: #0077B5;
 }
 
-#im-jeff {
-  margin-bottom:0;
+#rotating-text {
+  display: flex;
+  width: max-content;
+  margin: auto;
 }
 
 .tricker {
-  height: 50px;
+  height: 40px;
   overflow: hidden;
 }
 
-.tricker h3 {
+.tricker h2 {
   margin: 0;
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
   transition: margin-top .3s ease;
 }
 
@@ -161,4 +181,29 @@ nav .p-skills {
   bottom: 0%;
   width: 23%;
   z-index: 6;
+}
+
+@media only screen and (max-width: 767px) {
+  #intro h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  #intro h2 {
+    font-size: 24px;
+  }
+
+  #intro h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .tricker {
+    height: 40px;
+  }
+
+  .tricker h2 {
+    height: 40px;
+    line-height: 40px;
+  }
 }
