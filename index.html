@@ -17,15 +17,15 @@
 <body>
   <div id="main">
 
-    <nav><ul>
-      <li class="p-intro"><a href="#intro">Home</a></li>
-      <li class="p-about-me"><a href="#about-me">About Me</a></li>
-      <li class="p-skills"><a href="#skills">Skills</a></li>
-      {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
-    </ul></nav>
+    <nav>
+      <ul>
+        <li class="p-intro"><a href="#intro">Home</a></li>
+        <li class="p-about-me"><a href="#about-me">About Me</a></li>
+        <li class="p-skills"><a href="#skills">Skills</a></li>
+        <li class="p-experience"><a href="#experience">Experience</a></li>
+        <li class="p-contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
     <div id="intro" class="section p-intro">
       <div class="container center-center">
@@ -34,18 +34,17 @@
           <h2>I’m Jeff,</h2>
           <div class="tricker">
             <h2>an IT Professional</h2>
+            <h2>an Automation Nerd</h2>
             <h2>a WiFi Technician</h2>
-            <h2>a Support Specialist</h2>
-            <h2>a macOS & iOS Guru</h2>
-            <h2>an Automation Fiend</h2>
-            <h2>a Lifelong Learner</h2>
-            <h2>a Security Advocate</h2>
+            <h2>a macOS Admin</h2>
+            <h2>a Windows Admin</h2>
             <h2>a G Suite Prodigy</h2>
-            <h2>a WebDev Hobbyist</h2>
+            <h2>an Avid Reader</h2>
+            <h2>a Support Specialist</h2>
+            <h2>a Security Advocate</h2>
             <h2>a Network Wizard</h2>
+            <h2>a WebDev Hobbyist</h2>
             <h2>a Slack Aficionado</h2>
-            <h2>Friend of Elves</h2>
-            <h2>Enemy of Printers</h2>
           </div>
         </div>
         <h3>
@@ -64,7 +63,7 @@
 
       <div id="about-me-left"></div>
       <div id="about-me-middle" class="container">
-        <h1>About Me</h1>
+        <h1>Who I am</h1>
 
         <p>When I was 6 I had a Buzz Lightyear toy, complete with laser beams and sound effects. In my fascination, I took it apart. I destroyed that toy, but I learned a lot in the process. When I was 14, I received my first computer. Eventually, I was able to take it apart <em>and</em> put it back together. I'm driven by the question "How does this work?"</p>
 
@@ -84,7 +83,7 @@
       </div>
 
       <div class="container ">
-        <h1>Skills</h1>
+        <h1>What I do</h1>
         <p>I love technology and I love a challenge. I'm constantly diving deep into technical projects and learning new things because of it! Below is a list of the things I've learned so far, but this list is not exhaustive*.</p>
         <p>If your organization requires a skill that's not on the list, <strong>I will swiftly become an expert in that skill.</strong> Just point me in the right direction!</p>
         <div class="row">
@@ -134,8 +133,8 @@
         <img id="coffee" class="book" src="/img/coffee-large.png">
         <img id="notepad" class="book" src="/img/notebook-large.png">
         <img id="glasses" class="book" src="/img/glasses-large.png">
-        <img id="phoenix_project" class="book" src="/img/the_phoenix_project.jpg">
-        <img id="phone_habits" class="book" src="/img/7_habits_phone.png">
+        <img id="phoenix_project" class="book" src="/img/the-phoenix-project.jpg">
+        <img id="phone_habits" class="book" src="/img/7-habits-phone.png">
         <img id="design_everyday" class="book" src="/img/ebook.png">
       </div>
 
@@ -144,27 +143,256 @@
       </div>
     </div>
 
-    {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
-          <img src="{{page.icon}}" alt="section icon" />
-        </div>
-        {% elsif page.fa-icon %}
-        <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
-          </span>
-        </div>
-        {% endif %}
-        <div class="container {{ page.style }}">
-          {{ page.content }}
-        </div>
+    <div id="experience" class="section p-experience">
+      <div class="subtlecircle sectiondivider faicon">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-building fa-stack-1x"></i>
+        </span>
       </div>
-    {% endfor %}
 
+      <div class="container">
+        <h1>Where I’ve Worked</h1>
+
+        <p>I've worn a lot of hats and I've worked on a lot of projects. Whether it's terminating ethernet cables, deploying company-wide device management, or helping with an email problem, I'll be there.</p>
+
+        <div class="experience">
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/honey-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    IT Generalist
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    Honey Science
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    Jun 2018 - Jan 2019
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/naughty-dog-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    IT Generalist
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    Naughty Dog
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    Mar 2018 - Jun 2018
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/headspace-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    Systems Administrator
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    Headspace
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    Jan 2017 - Oct 2017
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/cgma-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    IT Supervisor
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    CG Master Academy
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    Sep 2015 - Dec 2016
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/csun-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    IT Help Center Consultant
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    California State University, Northridge
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    Sep 2014 - Sep 2015
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/umaine-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    Student Computer Technician III
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    University of Maine
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    May 2011 - Aug 2014
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1>Where I’ve Studied</h1>
+
+        <p>Most of my relevant experience has been gained on-the-job, but I'm always eager to gain more certificates! I'm currently looking into the Project Management Professional (PMP) Certification.</p>
+
+        <div class="experience">
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/google-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    Google IT Support Specialist Certificate
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    Google
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    2018
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/umaine-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    B.A. in New Media
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    University of Maine
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    Aug 2008 - May 2013
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-col exp-icon">
+              <img src="/img/utc-icon.png">
+            </div>
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="flex-row">
+                  <div class="flex-col exp-title">
+                    Information Technology Certificate
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <div class="flex-col exp-name">
+                    Unitied Technologies Center
+                  </div>
+                  <div class="flex-col exp-timeline">
+                    2007
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="contact" class="section p-contact">
+      <div class="subtlecircle sectiondivider faicon">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+        </span>
+      </div>
+
+      <div class="container ">
+        <h1>How You Can Find Me</h1>
+        <p>Good news! I'm available for work! You can reach me at the following:</p>
+        <ul>
+          <li>Email: <a href="mailto:jeff@jeffspaulding.io">jeff@jeffspaulding.io</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/jeffspaulding">www.linkedin.com/in/jeffspaulding</a></li>
+          <li>Resume: <a href="/pdf/Jeff_Spaulding_Resume.pdf">View My Resume</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div id="footer" class="section text-white">
       <div class="container">

@@ -6,6 +6,14 @@ nav .p-skills {
   border-color: #4CAF50;
 }
 
+nav .p-experience {
+  border-color: #F44336;
+}
+
+nav .p-contact {
+  border-color: #00BCD4;
+}
+
 #intro {
   background-color: black !important;
   color: white;
@@ -181,6 +189,75 @@ nav .p-skills {
   bottom: 0%;
   width: 23%;
   z-index: 6;
+}
+
+#experience {
+  background-color: #F44336 !important;
+  color: white;
+  display: flex;
+}
+
+#experience a {
+  color: white;
+}
+
+#experience .sectiondivider {
+  color: #F44336;
+}
+
+.experience {
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.exp-icon {
+  width: 66px;
+  flex: none;
+  height: 100%;
+}
+
+.exp-icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.exp-title {
+  font-size: 24px;
+}
+
+.exp-name {
+  font-size: 18px;
+}
+
+.exp-timeline {
+  text-align: right;
+  font-size: 18px;
+}
+
+#contact {
+  background-color: #00BCD4;
+  color: white;
+}
+
+#contact .sectiondivider {
+  color: #00BCD4;
 }
 
 @media only screen and (max-width: 767px) {

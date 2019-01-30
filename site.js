@@ -91,7 +91,7 @@ $(document).ready(function (){
         }
 	});
 
-    var trickerColors = ['#FFEB3B', '#E91E63', '#00BCD4', '#CDDC39', '#F44336', '#8BC34A', '#FFC107']
+    var trickerColors = ['#FFEB3B', '#E91E63', '#00BCD4', '#CDDC39', '#F44336', '#FFC107', '#8BC34A', '#009688']
     var trickerCounter = 0;
     $(".tricker h2").each(function() {
         $(this).css('color', trickerColors[trickerCounter]);
